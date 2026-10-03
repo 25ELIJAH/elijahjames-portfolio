@@ -13,8 +13,8 @@ export const profile = {
 
 export const contact = {
   email: "easterjames420@gmail.com",
-  phone: "+000 000 000 0000",
-  phoneHref: "+000000000000",
+  phone: "0740 840 018",
+  phoneHref: "0740840018",
   linkedin: { label: "linkedin.com/in/your-name", href: "https://linkedin.com/in/your-name" },
   github: { label: "github.com/your-name", href: "https://github.com/your-name" },
 };
