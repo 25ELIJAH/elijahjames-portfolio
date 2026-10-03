@@ -7,12 +7,9 @@ import { contact } from "~/data/site";
     <div class="wrap">
       <RevealBlock>
         <p class="kicker">Get in touch</p>
-        <h2>Let's work together.</h2>
-        <p class="about-text">Have a project or an idea? Send me a message and I'll get back to you.</p>
+        <h2 class="contact-title">Let's build something <em>great.</em></h2>
+        <a class="big-mail" :href="`mailto:${contact.email}`">{{ contact.email }} <span class="arrow">↗</span></a>
         <div class="contact-grid">
-          <a class="contact-card" :href="`mailto:${contact.email}`">
-            <small>Email</small><span>{{ contact.email }}</span>
-          </a>
           <a class="contact-card" :href="`tel:${contact.phoneHref}`">
             <small>Phone</small><span>{{ contact.phone }}</span>
           </a>

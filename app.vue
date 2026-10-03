@@ -3,6 +3,7 @@
     <SiteHeader />
     <main id="top">
       <HeroSection />
+      <MarqueeStrip />
       <AboutSection />
       <ProjectsSection />
       <SkillsSection />

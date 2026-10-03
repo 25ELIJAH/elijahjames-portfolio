@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { marketing } from "~/data/site";
+import { marketing, process } from "~/data/site";
 
 const num = (i: number) => String(i + 1).padStart(2, "0");
 </script>
@@ -11,7 +11,18 @@ const num = (i: number) => String(i + 1).padStart(2, "0");
         <p class="kicker">How I grow brands</p>
         <h2>Digital Marketing Strategy</h2>
       </RevealBlock>
-      <div class="grid">
+
+      <ol class="steps">
+        <li v-for="(s, i) in process" :key="s.title" class="step">
+          <RevealBlock>
+            <span class="step-dot">{{ i + 1 }}</span>
+            <h3>{{ s.title }}</h3>
+            <p>{{ s.text }}</p>
+          </RevealBlock>
+        </li>
+      </ol>
+
+      <div class="grid services">
         <div v-for="(m, i) in marketing" :key="m.title">
           <RevealBlock>
             <div class="card">

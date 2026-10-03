@@ -3,10 +3,11 @@
 export const profile = {
   name: "Elijah James",
   role: "Software Engineer · Digital Marketer",
+  rotating: ["Software Engineer", "Digital Marketer", "Web Developer", "Growth Strategist"],
   tagline:
     "I build web software and the marketing strategies that get it in front of the right people.",
   about:
-    "I'm a software engineer who also understands how to market what gets built. I write clean, practical code, and I plan campaigns around real goals: traffic, leads and sales. Working in both areas means products I build are made to be found and used.",
+    "I'm a software engineer and digital marketer. I write clean, practical code, and I plan campaigns around real goals: traffic, leads and sales. Working in both areas means products I build are made to be found and used.",
   photo: "/images/profile.jpg", // put your photo at public/images/profile.jpg
   initials: "EJ",
 };
@@ -30,7 +31,7 @@ export const projects: Project[] = [
   {
     title: "Project One",
     description: "Short description of what this project does and the problem it solves.",
-    tags: ["Next.js", "TypeScript", "CSS"],
+    tags: ["Nuxt", "Vue", "TypeScript"],
     links: [
       { label: "Live site", href: "#" },
       { label: "Source code", href: "#" },
@@ -54,7 +55,7 @@ export const projects: Project[] = [
 ];
 
 export const engineering = [
-  { label: "Front end", items: "HTML, CSS, JavaScript, React, Next.js" },
+  { label: "Front end", items: "HTML, CSS, JavaScript, Vue, React" },
   { label: "Back end", items: "Node.js, Python, REST APIs" },
   { label: "Databases", items: "MySQL, MongoDB" },
   { label: "Tools", items: "Git, GitHub, VS Code" },
@@ -77,4 +78,16 @@ export const marketing = [
     title: "Analytics",
     description: "Tracking and reporting so every decision is based on numbers, not guesses.",
   },
+];
+
+export const process = [
+  { title: "Research", text: "Understand the audience, the market and the competition." },
+  { title: "Strategy", text: "Set clear goals and pick the channels that fit them." },
+  { title: "Execute", text: "Build the site, launch the campaigns, publish the content." },
+  { title: "Measure", text: "Track results, learn from the data and improve." },
+];
+
+export const marqueeWords = [
+  "Web Development", "SEO", "Vue", "Social Ads", "Node.js", "Content Strategy",
+  "React", "Email Marketing", "Analytics", "Brand Growth", "REST APIs", "Conversion",
 ];
