@@ -80,7 +80,7 @@ export const marketing = [
   },
 ];
 
-export const process = [
+export const marketingSteps = [
   { title: "Research", text: "Understand the audience, the market and the competition." },
   { title: "Strategy", text: "Set clear goals and pick the channels that fit them." },
   { title: "Execute", text: "Build the site, launch the campaigns, publish the content." },

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { marketing, process } from "~/data/site";
+import { marketing, marketingSteps } from "~/data/site";
 
 const num = (i: number) => String(i + 1).padStart(2, "0");
 </script>
@@ -13,7 +13,7 @@ const num = (i: number) => String(i + 1).padStart(2, "0");
       </RevealBlock>
 
       <ol class="steps">
-        <li v-for="(s, i) in process" :key="s.title" class="step">
+        <li v-for="(s, i) in marketingSteps" :key="s.title" class="step">
           <RevealBlock>
             <span class="step-dot">{{ i + 1 }}</span>
             <h3>{{ s.title }}</h3>
