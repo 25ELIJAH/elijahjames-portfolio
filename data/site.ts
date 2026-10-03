@@ -1,4 +1,17 @@
-// Edit this file to update your portfolio content.
+// Edit this file to update your portfolio content and settings.
+
+export const settings = {
+  siteUrl: "https://elijahjamesportfloio.vercel.app",
+  // Contact form: create a free key at web3forms.com (or use a formspree.io URL) and paste it here.
+  // While these are empty, the form opens the visitor's email app instead.
+  formEndpoint: "", // e.g. "https://api.web3forms.com/submit"
+  formAccessKey: "", // Web3Forms access key (leave empty for Formspree)
+  // Each of these shows a button on the site only when filled in.
+  cv: "", // e.g. "/Elijah-James-CV.pdf" after saving the file in the public folder
+  whatsapp: "", // number with country code, digits only, e.g. "254740840018"
+  bookingUrl: "", // e.g. your Calendly link
+  analyticsId: "", // Google Analytics measurement ID, e.g. "G-XXXXXXXXXX"
+};
 
 export const profile = {
   name: "Elijah James",
@@ -21,36 +34,60 @@ export const contact = {
 };
 
 export type Project = {
+  slug: string;
   title: string;
+  category: "Software" | "Marketing";
   description: string;
   tags: string[];
   links: { label: string; href: string }[];
+  caseStudy: { goal: string; approach: string; result: string };
 };
 
 export const projects: Project[] = [
   {
+    slug: "project-one",
     title: "Project One",
+    category: "Software",
     description: "Short description of what this project does and the problem it solves.",
     tags: ["Nuxt", "Vue", "TypeScript"],
     links: [
       { label: "Live site", href: "#" },
       { label: "Source code", href: "#" },
     ],
+    caseStudy: {
+      goal: "Describe the problem or goal this project set out to solve.",
+      approach: "Explain what you built or did, and the tools and decisions behind it.",
+      result: "Share the outcome with a number if you can, such as speed, users or sales.",
+    },
   },
   {
+    slug: "project-two",
     title: "Project Two",
+    category: "Software",
     description: "Short description of what this project does and the problem it solves.",
     tags: ["React", "Node.js", "MongoDB"],
     links: [
       { label: "Live site", href: "#" },
       { label: "Source code", href: "#" },
     ],
+    caseStudy: {
+      goal: "Describe the problem or goal this project set out to solve.",
+      approach: "Explain what you built or did, and the tools and decisions behind it.",
+      result: "Share the outcome with a number if you can, such as speed, users or sales.",
+    },
   },
   {
+    slug: "project-three",
     title: "Project Three",
+    category: "Marketing",
     description: "Short description of a marketing campaign or product, with the result it achieved.",
     tags: ["SEO", "Social Ads", "Analytics"],
-    links: [{ label: "Case study", href: "#" }],
+    links: [],
+    caseStudy: {
+      goal: "Describe the client, their goal and the audience you wanted to reach.",
+      approach: "Explain the channels, content and tactics you used.",
+      result: "Share the outcome with numbers, such as traffic growth, leads or revenue.",
+    },
   },
 ];
 
@@ -85,4 +122,22 @@ export const marketingSteps = [
   { title: "Strategy", text: "Set clear goals and pick the channels that fit them." },
   { title: "Execute", text: "Build the site, launch the campaigns, publish the content." },
   { title: "Measure", text: "Track results, learn from the data and improve." },
+];
+
+// Testimonials only appear on the site when you add real ones here.
+export type Testimonial = { quote: string; name: string; role: string };
+export const testimonials: Testimonial[] = [
+  // { quote: "Elijah grew our traffic in three months.", name: "Client Name", role: "Company" },
+];
+
+// The Insights (blog) section only appears when you add a post here.
+export type Post = { slug: string; title: string; date: string; summary: string; body: string[] };
+export const posts: Post[] = [
+  // {
+  //   slug: "seo-basics",
+  //   title: "SEO basics for a new website",
+  //   date: "2026-10-10",
+  //   summary: "Five things to fix before you publish.",
+  //   body: ["First paragraph...", "Second paragraph..."],
+  // },
 ];

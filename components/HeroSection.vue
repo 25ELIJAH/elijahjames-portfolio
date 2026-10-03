@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { profile } from "~/data/site";
+import { profile, settings } from "~/data/site";
 
 const failed = ref(false);
 const img = ref<HTMLImageElement | null>(null);
+const whatsappUrl = settings.whatsapp ? `https://wa.me/${settings.whatsapp}` : "";
 
 // The image may fail before hydration, so @error never fires; check on mount too.
 onMounted(() => {
@@ -34,6 +35,11 @@ onMounted(() => {
       <div class="actions">
         <a class="btn" href="#projects">View my work</a>
         <a class="btn btn-outline" href="#contact">Contact me</a>
+        <a v-if="settings.cv" class="btn btn-outline" :href="settings.cv" download>Download CV</a>
+      </div>
+      <div v-if="whatsappUrl || settings.bookingUrl" class="quick-links">
+        <a v-if="whatsappUrl" class="link" :href="whatsappUrl" target="_blank" rel="noopener">Chat on WhatsApp <span class="arrow">→</span></a>
+        <a v-if="settings.bookingUrl" class="link" :href="settings.bookingUrl" target="_blank" rel="noopener">Book a call <span class="arrow">→</span></a>
       </div>
     </div>
   </section>
