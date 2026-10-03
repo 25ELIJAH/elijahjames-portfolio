@@ -1,6 +1,6 @@
 node_modules
-.next
-out
-next-env.d.ts
-*.tsbuildinfo
+.nuxt
+.output
+dist
 .env*.local
+.next
