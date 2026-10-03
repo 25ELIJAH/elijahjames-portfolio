@@ -5,7 +5,8 @@ import { profile } from "~/data/site";
 <template>
   <section id="about" class="wrap section">
     <RevealBlock>
-      <h2>About</h2>
+      <p class="kicker">About me</p>
+      <h2>Code and marketing, together.</h2>
       <p class="about-text">{{ profile.about }}</p>
     </RevealBlock>
   </section>
