@@ -3,7 +3,7 @@
 export const profile = {
   name: "Elijah James",
   role: "Software Engineer · Digital Marketer",
-  rotating: ["Software Engineer", "Digital Marketer", "Web Developer", "Growth Strategist"],
+  rotating: ["Digital Marketer", "Software Engineer"],
   tagline:
     "I build web software and the marketing strategies that get it in front of the right people.",
   about:
@@ -85,9 +85,4 @@ export const marketingSteps = [
   { title: "Strategy", text: "Set clear goals and pick the channels that fit them." },
   { title: "Execute", text: "Build the site, launch the campaigns, publish the content." },
   { title: "Measure", text: "Track results, learn from the data and improve." },
-];
-
-export const marqueeWords = [
-  "Web Development", "SEO", "Vue", "Social Ads", "Node.js", "Content Strategy",
-  "React", "Email Marketing", "Analytics", "Brand Growth", "REST APIs", "Conversion",
 ];

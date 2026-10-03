@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import { marketing, marketingSteps } from "~/data/site";
-
-const num = (i: number) => String(i + 1).padStart(2, "0");
 </script>
 
 <template>
@@ -22,11 +20,10 @@ const num = (i: number) => String(i + 1).padStart(2, "0");
         </li>
       </ol>
 
-      <div class="grid services">
-        <div v-for="(m, i) in marketing" :key="m.title">
+      <div class="grid">
+        <div v-for="m in marketing" :key="m.title">
           <RevealBlock>
             <div class="card">
-              <span class="card-num">{{ num(i) }}</span>
               <h3>{{ m.title }}</h3>
               <p>{{ m.description }}</p>
             </div>
