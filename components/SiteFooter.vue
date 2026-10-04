@@ -5,6 +5,9 @@ const year = new Date().getFullYear();
 
 <template>
   <footer class="site-footer">
-    <div class="wrap">© {{ year }} {{ profile.name }}</div>
+    <div class="wrap footer-inner">
+      <SocialLinks />
+      <p>© {{ year }} {{ profile.name }}</p>
+    </div>
   </footer>
 </template>

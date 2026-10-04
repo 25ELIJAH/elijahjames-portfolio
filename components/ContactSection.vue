@@ -3,7 +3,6 @@ import { contact, settings } from "~/data/site";
 
 const form = reactive({ name: "", email: "", message: "" });
 const status = ref<"idle" | "sending" | "sent" | "error">("idle");
-const whatsappUrl = settings.whatsapp ? `https://wa.me/${settings.whatsapp}` : "";
 
 async function submit() {
   // No form service set up yet: open the visitor's email app with the message filled in.
@@ -49,10 +48,8 @@ async function submit() {
         <ul class="contact-list">
           <li><span>Email</span><a class="link" :href="`mailto:${contact.email}`">{{ contact.email }}</a></li>
           <li><span>Phone</span><a class="link" :href="`tel:${contact.phoneHref}`">{{ contact.phone }}</a></li>
-          <li v-if="whatsappUrl"><span>WhatsApp</span><a class="link" :href="whatsappUrl" target="_blank" rel="noopener">Send a message</a></li>
           <li v-if="settings.bookingUrl"><span>Book</span><a class="link" :href="settings.bookingUrl" target="_blank" rel="noopener">Schedule a call</a></li>
-          <li><span>LinkedIn</span><a class="link" :href="contact.linkedin.href">{{ contact.linkedin.label }}</a></li>
-          <li><span>GitHub</span><a class="link" :href="contact.github.href">{{ contact.github.label }}</a></li>
+          <li class="find-me"><span>Find me on</span><SocialLinks /></li>
         </ul>
       </RevealBlock>
 

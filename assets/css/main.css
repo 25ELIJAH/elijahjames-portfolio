@@ -288,3 +288,27 @@ h1, h2, h3, .logo, .big-num {
 h1, h2 { font-weight: 800; letter-spacing: -0.025em; }
 h3 { font-weight: 700; letter-spacing: -0.01em; }
 .logo { font-weight: 800; }
+
+/* ---------- Social icon links ---------- */
+.socials { display: flex; gap: 10px; list-style: none; }
+.socials a {
+  position: relative; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%;
+  border: 1px solid var(--line); background: var(--bg); color: var(--text);
+  transition: transform 0.3s var(--ease), background 0.3s var(--ease), color 0.3s var(--ease), border-color 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+.socials a:hover, .socials a:focus-visible {
+  transform: translateY(-4px); background: var(--heading); border-color: var(--heading); color: #fff;
+  box-shadow: 0 10px 20px rgba(194, 65, 12, 0.25); outline: none;
+}
+.socials a::after { /* tooltip */
+  content: attr(data-tip); position: absolute; bottom: calc(100% + 10px); left: 50%; transform: translate(-50%, 4px);
+  padding: 3px 9px; border-radius: 4px; background: #000; color: #fff; font-size: 0.72rem; font-weight: 500; white-space: nowrap;
+  opacity: 0; pointer-events: none; transition: opacity 0.2s, transform 0.2s var(--ease);
+}
+.socials a:hover::after, .socials a:focus-visible::after { opacity: 1; transform: translate(-50%, 0); }
+.hero-social-row { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; margin-top: 22px; }
+.contact-list .find-me { align-items: center; }
+.footer-inner { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+.site-footer .socials a { width: 36px; height: 36px; }
+.contact-list .socials li, .socials li { display: block; padding: 0; border: 0; }
+.contact-list .socials li:hover { padding-left: 0; }
