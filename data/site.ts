@@ -229,6 +229,7 @@ export type Role = {
   title: string;
   period: string;
   year: string; // group heading
+  logo?: string; // file in public/logos; initials badge is shown when missing
   current?: boolean;
   duties: string[];
 };
@@ -307,6 +308,7 @@ export const experience: Role[] = [
   },
   {
     company: "ModernLux Furniture",
+    logo: "/logos/modern-lux.png",
     title: "Head of Marketing and Sales Representative",
     period: "2024 – 2025",
     year: "2024",
@@ -320,6 +322,7 @@ export const experience: Role[] = [
   },
   {
     company: "Spiro",
+    logo: "/logos/spiro.png",
     title: "Junior Campaign Strategist",
     period: "2024",
     year: "2024",

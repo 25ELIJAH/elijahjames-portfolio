@@ -10,6 +10,15 @@ const groups = computed(() => {
   }
   return [...map.entries()].map(([year, roles]) => ({ year, roles }));
 });
+
+// Initials shown when a company has no logo file.
+const initials = (name: string) =>
+  name
+    .split(/\s+/)
+    .slice(0, 2)
+    .map((w) => w[0])
+    .join("")
+    .toUpperCase();
 </script>
 
 <template>
@@ -32,8 +41,14 @@ const groups = computed(() => {
                 <span v-if="r.current" class="xp-now">Current</span>
               </div>
               <div class="xp-body">
-                <h3>{{ r.title }}</h3>
-                <p class="xp-company">{{ r.company }}</p>
+                <div class="xp-head">
+                  <img v-if="r.logo" class="xp-logo" :src="r.logo" :alt="`${r.company} logo`" width="48" height="48" loading="lazy" />
+                  <span v-else class="xp-logo xp-initials" aria-hidden="true">{{ initials(r.company) }}</span>
+                  <div>
+                    <h3>{{ r.title }}</h3>
+                    <p class="xp-company">{{ r.company }}</p>
+                  </div>
+                </div>
                 <ul class="xp-duties">
                   <li v-for="d in r.duties" :key="d">{{ d }}</li>
                 </ul>
