@@ -154,6 +154,28 @@ export const projects: Project[] = [
       ],
     },
   },
+  {
+    slug: "zetesia",
+    title: "Zetesia",
+    category: "Software",
+    role: "Development team member",
+    url: "https://zetesia.com/",
+    description:
+      "Online multivendor marketplace where shoppers buy directly from vetted artisans and makers.",
+    tags: ["Marketplace", "Multivendor", "Messaging"],
+    links: [{ label: "Live site", href: "https://zetesia.com/" }],
+    details: {
+      about:
+        "Zetesia is a curated multivendor marketplace that connects conscious shoppers with artisans and makers across categories such as fashion and beauty, home and living, electronics, food and beverage, travel and real estate.",
+      role: "I was one of the developers on the team that built this marketplace.",
+      features: [
+        "A scrollable feed of products posted by makers, with photos and videos",
+        "Direct messaging between buyers and sellers, including custom order requests",
+        "Payments routed straight to the creators",
+        "Browsing across many categories and curated selections",
+      ],
+    },
+  },
 ];
 
 // Tools shown as icons. "icon" is a file in public/icons (without .svg).
