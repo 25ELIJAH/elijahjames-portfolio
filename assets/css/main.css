@@ -69,7 +69,7 @@ a { color: var(--accent); text-decoration: none; }
 
 /* ---------- Hero (photo left, full height) ---------- */
 .hero { display: grid; grid-template-columns: 1fr 1fr; min-height: 100vh; padding-top: var(--header-h); }
-.hero-photo { position: relative; overflow: hidden; background: var(--tint); animation: fadeIn 0.9s var(--ease) both; }
+.hero-photo { position: relative; overflow: hidden; background: #ffffff; border-right: 1px solid var(--line); animation: fadeIn 0.9s var(--ease) both; }
 .hero-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; animation: settle 1.6s var(--ease) both; }
 .photo-fallback { position: absolute; inset: 0; display: grid; place-items: center; font-size: 4rem; font-weight: 700; color: #cdd3de; letter-spacing: 0.05em; }
 
