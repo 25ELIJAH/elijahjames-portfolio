@@ -23,8 +23,9 @@ useHead({
   <main class="page">
     <div class="wrap narrow">
       <NuxtLink to="/#projects" class="link back"><span class="arrow back-arrow">←</span> All projects</NuxtLink>
-      <p class="kicker">{{ project.category }} case study</p>
+      <p class="kicker">{{ project.category }} project</p>
       <h1 class="page-title">{{ project.title }}</h1>
+      <p v-if="project.role" class="role-badge">{{ project.role }}</p>
       <p class="about-text">{{ project.description }}</p>
       <div class="chips">
         <span v-for="t in project.tags" :key="t" class="chip">{{ t }}</span>
@@ -32,21 +33,23 @@ useHead({
 
       <div class="case">
         <div class="case-block">
-          <h2>The goal</h2>
-          <p>{{ project.caseStudy.goal }}</p>
+          <h2>About the project</h2>
+          <p>{{ project.details.about }}</p>
+        </div>
+        <div v-if="project.details.role" class="case-block">
+          <h2>My role</h2>
+          <p>{{ project.details.role }}</p>
         </div>
         <div class="case-block">
-          <h2>What I did</h2>
-          <p>{{ project.caseStudy.approach }}</p>
-        </div>
-        <div class="case-block">
-          <h2>The result</h2>
-          <p>{{ project.caseStudy.result }}</p>
+          <h2>What the site includes</h2>
+          <ul class="xp-duties">
+            <li v-for="f in project.details.features" :key="f">{{ f }}</li>
+          </ul>
         </div>
       </div>
 
-      <p v-if="project.links.length" class="links page-links">
-        <a v-for="l in project.links" :key="l.label" :href="l.href" class="link">{{ l.label }} <span class="arrow">→</span></a>
+      <p class="links page-links">
+        <a :href="project.url" target="_blank" rel="noopener noreferrer" class="btn">Visit the live site <span class="arrow">↗</span></a>
       </p>
 
       <NuxtLink :to="`/projects/${next.slug}`" class="next-card">

@@ -17,7 +17,7 @@ const shown = computed(() =>
     <div class="wrap">
       <RevealBlock class="section-head">
         <p class="kicker">Selected work</p>
-        <h2>Projects</h2>
+        <h2>Software Projects</h2>
         <div v-if="filters.length > 2" class="filters" role="group" aria-label="Filter projects">
           <button
             v-for="f in filters"
@@ -32,15 +32,15 @@ const shown = computed(() =>
 
       <div :key="active" class="grid grid-swap">
         <article v-for="p in shown" :key="p.slug" class="card">
-          <span class="card-num">{{ p.n }} · {{ p.category }}</span>
+          <span class="card-num">{{ p.n }}<template v-if="p.role"> · {{ p.role }}</template></span>
           <h3>{{ p.title }}</h3>
           <p>{{ p.description }}</p>
           <div class="chips">
             <span v-for="t in p.tags" :key="t" class="chip">{{ t }}</span>
           </div>
           <p class="links">
-            <NuxtLink :to="`/projects/${p.slug}`" class="link">Case study <span class="arrow">→</span></NuxtLink>
-            <a v-for="l in p.links" :key="l.label" :href="l.href" class="link">{{ l.label }} <span class="arrow">→</span></a>
+            <a v-for="l in p.links" :key="l.label" :href="l.href" target="_blank" rel="noopener noreferrer" class="link">{{ l.label }} <span class="arrow">↗</span></a>
+            <NuxtLink :to="`/projects/${p.slug}`" class="link">Details <span class="arrow">→</span></NuxtLink>
           </p>
         </article>
       </div>

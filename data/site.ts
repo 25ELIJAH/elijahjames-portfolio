@@ -37,56 +37,119 @@ export type Project = {
   slug: string;
   title: string;
   category: "Software" | "Marketing";
+  role?: string; // your role on the project, shown as a badge
+  url: string;
   description: string;
   tags: string[];
   links: { label: string; href: string }[];
-  caseStudy: { goal: string; approach: string; result: string };
+  details: { about: string; role?: string; features: string[] };
 };
 
 export const projects: Project[] = [
   {
-    slug: "project-one",
-    title: "Project One",
+    slug: "eagles-wings-community",
+    title: "Eagle's Wings Community Group",
     category: "Software",
-    description: "Short description of what this project does and the problem it solves.",
-    tags: ["Nuxt", "Vue", "TypeScript"],
-    links: [
-      { label: "Live site", href: "#" },
-      { label: "Source code", href: "#" },
-    ],
-    caseStudy: {
-      goal: "Describe the problem or goal this project set out to solve.",
-      approach: "Explain what you built or did, and the tools and decisions behind it.",
-      result: "Share the outcome with a number if you can, such as speed, users or sales.",
+    role: "Built by me",
+    url: "https://www.eagleswingscommunity.org/",
+    description:
+      "Website for a Kenyan nonprofit that feeds vulnerable families, mentors youth and runs medical outreach camps.",
+    tags: ["Nonprofit", "Donations", "Volunteers"],
+    links: [{ label: "Live site", href: "https://www.eagleswingscommunity.org/" }],
+    details: {
+      about:
+        "Eagle's Wings Community Group is a Kenya-based nonprofit that supports vulnerable families through feeding programmes, youth mentorship and medical outreach camps.",
+      role: "I built this website.",
+      features: [
+        "Pages for the three programmes: feeding families, youth mentorship and medical camps",
+        "Donation and volunteer sections",
+        "Impact statistics and success stories",
+        "Contact form and WhatsApp for enquiries",
+      ],
     },
   },
   {
-    slug: "project-two",
-    title: "Project Two",
+    slug: "pcea-kitengela-schools",
+    title: "PCEA Kitengela Township Schools",
     category: "Software",
-    description: "Short description of what this project does and the problem it solves.",
-    tags: ["React", "Node.js", "Vercel"],
-    links: [
-      { label: "Live site", href: "#" },
-      { label: "Source code", href: "#" },
-    ],
-    caseStudy: {
-      goal: "Describe the problem or goal this project set out to solve.",
-      approach: "Explain what you built or did, and the tools and decisions behind it.",
-      result: "Share the outcome with a number if you can, such as speed, users or sales.",
+    role: "Co-developed",
+    url: "https://pceakts.sc.ke/index",
+    description:
+      "School website offering CBC education from preschool to junior school, with admissions and school life information.",
+    tags: ["School website", "Admissions", "Gallery"],
+    links: [{ label: "Live site", href: "https://pceakts.sc.ke/index" }],
+    details: {
+      about:
+        "PCEA Kitengela Township Schools is a Christian school on the Namanga–Nairobi Highway offering CBC education for Preschool, Primary and Junior School.",
+      role: "I partnered in developing this website.",
+      features: [
+        "Sections for Early Years, Primary and Junior Secondary",
+        "Admissions, academics and co-curricular activities pages",
+        "School life photo gallery",
+        "Information about the school's mission and approach",
+      ],
     },
   },
   {
-    slug: "project-three",
-    title: "Project Three",
-    category: "Marketing",
-    description: "Short description of a marketing campaign or product, with the result it achieved.",
-    tags: ["SEO", "Social Ads", "Analytics"],
-    links: [],
-    caseStudy: {
-      goal: "Describe the client, their goal and the audience you wanted to reach.",
-      approach: "Explain the channels, content and tactics you used.",
-      result: "Share the outcome with numbers, such as traffic growth, leads or revenue.",
+    slug: "modern-lux-furnitures",
+    title: "Modern Lux Furnitures",
+    category: "Software",
+    role: "Managed by me",
+    url: "https://modernluxfurnitures.co.ke/",
+    description:
+      "E-commerce store for modern residential and commercial furniture, with a full catalogue and WhatsApp ordering.",
+    tags: ["E-commerce", "Catalogue", "WhatsApp ordering"],
+    links: [{ label: "Live site", href: "https://modernluxfurnitures.co.ke/" }],
+    details: {
+      about:
+        "Modern Lux Furnitures is an online furniture retailer offering a blend of modern design and comfort for homes and offices.",
+      role: "I manage this website.",
+      features: [
+        "Product catalogue by room and category: office, dining, bedroom, living room and outdoor",
+        "Shopping cart and customer accounts",
+        "WhatsApp and SMS ordering",
+        "Mailing list sign-up",
+      ],
+    },
+  },
+  {
+    slug: "fairprice-furniture",
+    title: "Fairprice Furniture Kenya",
+    category: "Software",
+    role: "Managed by me",
+    url: "https://fairpricefurniture.co.ke/",
+    description:
+      "E-commerce store for locally made furniture in Kenya, with product search and WhatsApp orders.",
+    tags: ["E-commerce", "Catalogue", "Product search"],
+    links: [{ label: "Live site", href: "https://fairpricefurniture.co.ke/" }],
+    details: {
+      about:
+        "Fairprice Furniture Kenya is an online retailer specialising in locally made furniture, from bedroom sets and dining tables to recliners and office pieces.",
+      role: "I manage this website.",
+      features: [
+        "Catalogue organised by room type: bedroom, kitchen, living room, office and outdoor",
+        "Shopping cart, login and registration",
+        "Product search",
+        "WhatsApp for orders and enquiries",
+      ],
+    },
+  },
+  {
+    slug: "wajibu",
+    title: "WAJIBU",
+    category: "Software",
+    url: "https://wajibu.uk/",
+    description:
+      "Website for an ESG strategy, compliance and sustainability advisory firm based in London.",
+    tags: ["Corporate website", "Consulting", "ESG"],
+    links: [{ label: "Live site", href: "https://wajibu.uk/" }],
+    details: {
+      about:
+        "WAJIBU is an ESG (Environmental, Social and Governance) strategy, compliance and sustainability advisory firm based in London.",
+      features: [
+        "Home, About, Services, Insights, Impact and Contact pages",
+        "A prominent \"Book Consultation\" call to action",
+      ],
     },
   },
 ];

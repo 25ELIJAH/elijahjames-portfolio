@@ -347,3 +347,10 @@ h3 { font-weight: 700; letter-spacing: -0.01em; }
 .xp-meta { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
 .xp-now { margin-top: 0; }
 @media (max-width: 760px) { .xp-list { grid-template-columns: 1fr; } }
+
+/* Project role badge on detail pages */
+.role-badge {
+  display: inline-block; margin: 8px 0 4px; padding: 2px 12px; border-radius: 999px;
+  border: 1px solid var(--heading); color: var(--heading); font-size: 0.78rem; font-weight: 700;
+}
+.case .xp-duties li { color: var(--text); }
