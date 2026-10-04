@@ -6,6 +6,7 @@ const links = computed(() => [
   { to: "/#projects", label: "Projects" },
   { to: "/#skills", label: "Skills" },
   { to: "/#marketing", label: "Marketing" },
+  { to: "/#experience", label: "Experience" },
   ...(testimonials.length ? [{ to: "/#testimonials", label: "Reviews" }] : []),
   ...(posts.length ? [{ to: "/#insights", label: "Insights" }] : []),
   { to: "/#contact", label: "Contact" },

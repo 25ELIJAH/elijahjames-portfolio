@@ -9,6 +9,7 @@ import { testimonials, posts } from "~/data/site";
     <ProjectsSection />
     <SkillsSection />
     <MarketingSection />
+    <ExperienceSection />
     <TestimonialsSection v-if="testimonials.length" />
     <InsightsSection v-if="posts.length" />
     <ContactSection />

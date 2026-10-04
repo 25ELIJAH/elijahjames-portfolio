@@ -124,6 +124,96 @@ export const marketingSteps = [
   { title: "Measure", text: "Track results, learn from the data and improve." },
 ];
 
+// Work experience, most recent first.
+export type Role = { company: string; title: string; period: string; current?: boolean; duties: string[] };
+
+const headOfMarketingDuties = [
+  "Built and led the marketing strategy and plan, aligned with the company's sales goals.",
+  "Planned, created and scheduled content across the company's social media pages.",
+  "Ran paid advertising campaigns and managed the marketing budget.",
+  "Directed branding, product photography and creative work so every post and ad looked consistent.",
+  "Generated leads, answered customer enquiries and followed them up until they became sales.",
+  "Tracked campaign results and reported what was working to management.",
+  "Coordinated designers, photographers and content creators on campaigns.",
+];
+
+export const experience: Role[] = [
+  {
+    company: "Cemmax Building Supplies",
+    title: "Digital Marketer",
+    period: "August 2026 – Present",
+    current: true,
+    duties: [
+      "Plan and run the full digital marketing for the business across search, social media, email and messaging.",
+      "Improve the website and online listings for search (SEO), including keywords, page content and Google Business Profile.",
+      "Create and schedule daily content for social media: product posts, graphics, short videos and promotions.",
+      "Run and optimise paid campaigns on Google and social platforms, managing budgets and targeting.",
+      "Generate and follow up leads through WhatsApp, email and social media enquiries.",
+      "Run email and WhatsApp campaigns to keep customers informed about stock, offers and projects.",
+      "Manage the product catalogue online and promote building materials to contractors, builders and homeowners.",
+      "Handle community management: replying to comments and messages and protecting the brand's online reputation.",
+      "Research competitors and the market to find new opportunities.",
+      "Track website and campaign analytics, and report on traffic, leads and results.",
+    ],
+  },
+  {
+    company: "Seven Stars Solar",
+    title: "Digital Marketer",
+    period: "August 2026 – Present",
+    current: true,
+    duties: [
+      "Promote solar products and installation services through social media, search and paid advertising.",
+      "Create educational and promotional content that explains solar benefits to homes and businesses.",
+      "Generate and qualify leads from online enquiries, calls and WhatsApp messages.",
+      "Manage the company's online presence, including pages, listings and customer messages.",
+      "Track campaign performance and report results.",
+    ],
+  },
+  {
+    company: "Brimax Solar Tech",
+    title: "Head of Marketing",
+    period: "Until September 2026",
+    duties: [
+      "Led the marketing strategy for the company's solar products and services.",
+      "Planned and ran digital campaigns to bring in leads for solar installations.",
+      "Managed the brand, content and social media presence.",
+      "Followed up leads and worked with the sales side to turn enquiries into customers.",
+      "Tracked results and reported to management.",
+    ],
+  },
+  {
+    company: "Slims Arts and Design",
+    title: "Head of Marketing",
+    period: "April 2026 – July 2026",
+    duties: [
+      "Led the marketing and brand positioning for the design business.",
+      "Promoted the company's design work and portfolio across social media and online channels.",
+      "Planned content and campaigns to attract new clients and keep existing ones.",
+      "Handled client enquiries and lead follow-up.",
+      "Tracked campaign results and reported to management.",
+    ],
+  },
+  {
+    company: "Kenty Furniture",
+    title: "Head of Marketing",
+    period: "2024 – 2025",
+    duties: headOfMarketingDuties,
+  },
+  {
+    company: "ModernLux Furniture",
+    title: "Head of Marketing and Sales Representative",
+    period: "2024 – 2025",
+    duties: [
+      "Marketing: built and ran the marketing plan, social media content and paid campaigns for the furniture brand.",
+      "Marketing: directed branding, product photography and creative work, and tracked campaign results.",
+      "Sales: handled customer enquiries by phone, WhatsApp, social media and in person.",
+      "Sales: presented products, advised customers on options and prepared quotations.",
+      "Sales: followed up leads, closed sales and kept customer records up to date.",
+      "Linked marketing and sales by turning campaign enquiries into orders.",
+    ],
+  },
+];
+
 // Testimonials only appear on the site when you add real ones here.
 export type Testimonial = { quote: string; name: string; role: string };
 export const testimonials: Testimonial[] = [

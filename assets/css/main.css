@@ -312,3 +312,20 @@ h3 { font-weight: 700; letter-spacing: -0.01em; }
 .site-footer .socials a { width: 36px; height: 36px; }
 .contact-list .socials li, .socials li { display: block; padding: 0; border: 0; }
 .contact-list .socials li:hover { padding-left: 0; }
+
+/* ---------- Experience ---------- */
+.xp-list { list-style: none; display: grid; gap: 18px; }
+.xp {
+  display: grid; grid-template-columns: 170px 1fr; gap: 24px; padding: 24px;
+  border: 1px solid var(--line); border-radius: 8px; background: var(--bg);
+  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease), border-color 0.3s var(--ease);
+}
+.xp:hover { transform: translateY(-3px); border-color: var(--heading); box-shadow: 0 12px 28px rgba(27, 34, 48, 0.08); }
+.xp-period { font-size: 0.85rem; font-weight: 600; color: var(--heading); }
+.xp-now { display: inline-block; margin-top: 6px; padding: 1px 9px; border-radius: 999px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; background: var(--heading); color: #fff; }
+.xp-body h3 { font-size: 1.1rem; margin-bottom: 2px; }
+.xp-company { font-weight: 600; margin-bottom: 12px; }
+.xp-duties { list-style: none; display: grid; gap: 7px; }
+.xp-duties li { position: relative; padding-left: 18px; font-size: 0.9rem; color: var(--muted); }
+.xp-duties li::before { content: ""; position: absolute; left: 0; top: 0.7em; width: 7px; height: 2px; background: var(--heading); }
+@media (max-width: 720px) { .xp { grid-template-columns: 1fr; gap: 10px; padding: 20px; } }
