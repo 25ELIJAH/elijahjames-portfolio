@@ -7,7 +7,7 @@
   --bg: #ffffff;
   --soft: #ffffff;
   --tint: #f3f4f6;
-  --heading: #0b6b57;
+  --heading: #c2410c;
   --accent: #1b2230;
   --accent-dark: #000000;
   --accent-soft: #f1f3f6;
@@ -280,3 +280,11 @@ h2::after { content: ""; display: block; width: 44px; height: 3px; margin-top: 1
 .step:hover .step-dot { background: var(--heading); color: #fff; }
 .link:hover { color: var(--heading); }
 .card:hover, .skill-card:hover, .next-card:hover { border-color: var(--heading); }
+
+/* ---------- Display font for headings ---------- */
+h1, h2, h3, .logo, .big-num {
+  font-family: "Bricolage Grotesque", "Inter", system-ui, sans-serif;
+}
+h1, h2 { font-weight: 800; letter-spacing: -0.025em; }
+h3 { font-weight: 700; letter-spacing: -0.01em; }
+.logo { font-weight: 800; }
