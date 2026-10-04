@@ -24,9 +24,8 @@ export default defineNuxtConfig({
       ],
       script: [
         {
-          // Apply a saved dark-mode choice before first paint (default is light).
-          innerHTML:
-            "try{if(localStorage.getItem('theme')==='dark')document.documentElement.dataset.theme='dark'}catch(e){}",
+          // The site is white only. Clear any dark-mode choice saved by an earlier version.
+          innerHTML: "try{localStorage.removeItem('theme')}catch(e){}",
         },
       ],
       meta: [
