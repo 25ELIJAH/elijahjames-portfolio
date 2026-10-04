@@ -93,8 +93,8 @@ export const projects: Project[] = [
 
 export const engineering = [
   { label: "Front end", items: "HTML, CSS, JavaScript, Vue, React" },
-  { label: "Mobile", items: "React Native" },
-  { label: "Back end", items: "Node.js, PHP" },
+  { label: "Back end", items: "PHP, Node.js, Java, Python, C++" },
+  { label: "Databases", items: "MySQL" },
   { label: "Deployment & tools", items: "Vercel, Git, GitHub" },
 ];
 

@@ -17,7 +17,7 @@ useHead({
         email: contact.email,
         telephone: contact.phoneHref,
         sameAs: [contact.linkedin.href, contact.github.href],
-        knowsAbout: ["Vue", "React", "React Native", "Node.js", "PHP", "Vercel", "Digital marketing"],
+        knowsAbout: ["HTML", "CSS", "JavaScript", "Vue", "React", "Node.js", "PHP", "Java", "Python", "C++", "MySQL", "Vercel", "Digital marketing"],
       }),
     },
     // Google Analytics loads only when an ID is set in data/site.ts.
