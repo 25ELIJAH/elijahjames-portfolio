@@ -16,6 +16,7 @@ useHead({
         jobTitle: "Software Engineer and Digital Marketer",
         email: contact.email,
         telephone: contact.phoneHref,
+        sameAs: [contact.linkedin.href, contact.github.href],
       }),
     },
     // Google Analytics loads only when an ID is set in data/site.ts.

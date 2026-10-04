@@ -8,7 +8,7 @@ export const settings = {
   formAccessKey: "", // Web3Forms access key (leave empty for Formspree)
   // Each of these shows a button on the site only when filled in.
   cv: "", // e.g. "/Elijah-James-CV.pdf" after saving the file in the public folder
-  whatsapp: "", // number with country code, digits only, e.g. "254740840018"
+  whatsapp: "254740840018", // number with country code, digits only
   bookingUrl: "", // e.g. your Calendly link
   analyticsId: "", // Google Analytics measurement ID, e.g. "G-XXXXXXXXXX"
 };
@@ -29,8 +29,8 @@ export const contact = {
   email: "easterjames420@gmail.com",
   phone: "0740 840 018",
   phoneHref: "0740840018",
-  linkedin: { label: "linkedin.com/in/your-name", href: "https://linkedin.com/in/your-name" },
-  github: { label: "github.com/your-name", href: "https://github.com/your-name" },
+  linkedin: { label: "linkedin.com/in/elijahjames254", href: "https://www.linkedin.com/in/elijahjames254" },
+  github: { label: "github.com/25ELIJAH", href: "https://github.com/25ELIJAH" },
 };
 
 export type Project = {
