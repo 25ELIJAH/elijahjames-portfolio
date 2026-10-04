@@ -124,60 +124,56 @@ export const marketingSteps = [
   { title: "Measure", text: "Track results, learn from the data and improve." },
 ];
 
-// Work experience, most recent first.
-export type Role = { company: string; title: string; period: string; current?: boolean; duties: string[] };
-
-const headOfMarketingDuties = [
-  "Built and led the marketing strategy and plan, aligned with the company's sales goals.",
-  "Planned, created and scheduled content across the company's social media pages.",
-  "Ran paid advertising campaigns and managed the marketing budget.",
-  "Directed branding, product photography and creative work so every post and ad looked consistent.",
-  "Generated leads, answered customer enquiries and followed them up until they became sales.",
-  "Tracked campaign results and reported what was working to management.",
-  "Coordinated designers, photographers and content creators on campaigns.",
-];
+// Work experience, grouped by start year, most recent first. Keep each role to 5 key points.
+export type Role = {
+  company: string;
+  title: string;
+  period: string;
+  year: string; // group heading
+  current?: boolean;
+  duties: string[];
+};
 
 export const experience: Role[] = [
+  // ---------- 2026 ----------
   {
     company: "Cemmax Building Supplies",
-    title: "Digital Marketer",
+    title: "Head of Marketing",
     period: "August 2026 – Present",
+    year: "2026",
     current: true,
     duties: [
-      "Plan and run the full digital marketing for the business across search, social media, email and messaging.",
-      "Improve the website and online listings for search (SEO), including keywords, page content and Google Business Profile.",
-      "Create and schedule daily content for social media: product posts, graphics, short videos and promotions.",
-      "Run and optimise paid campaigns on Google and social platforms, managing budgets and targeting.",
-      "Generate and follow up leads through WhatsApp, email and social media enquiries.",
-      "Run email and WhatsApp campaigns to keep customers informed about stock, offers and projects.",
-      "Manage the product catalogue online and promote building materials to contractors, builders and homeowners.",
-      "Handle community management: replying to comments and messages and protecting the brand's online reputation.",
-      "Research competitors and the market to find new opportunities.",
-      "Track website and campaign analytics, and report on traffic, leads and results.",
+      "Plan, run and optimise paid ads on Google and social media, and manage the ad budget.",
+      "Manage the brand's social media pages and content calendar.",
+      "Generate and follow up leads from ads, WhatsApp and online enquiries.",
+      "Improve SEO and online listings, including the website and Google Business Profile.",
+      "Track analytics and report campaign results to management.",
     ],
   },
   {
     company: "Seven Stars Solar",
-    title: "Digital Marketer",
+    title: "Head of Marketing",
     period: "August 2026 – Present",
+    year: "2026",
     current: true,
     duties: [
-      "Promote solar products and installation services through social media, search and paid advertising.",
-      "Create educational and promotional content that explains solar benefits to homes and businesses.",
-      "Generate and qualify leads from online enquiries, calls and WhatsApp messages.",
-      "Manage the company's online presence, including pages, listings and customer messages.",
-      "Track campaign performance and report results.",
+      "Plan and run paid ad campaigns to promote solar products and installations.",
+      "Manage social media pages and create content that explains the benefits of solar.",
+      "Generate and follow up leads from ads, calls and WhatsApp.",
+      "Manage the company's online presence and customer messages.",
+      "Track campaign performance and report results to management.",
     ],
   },
   {
     company: "Brimax Solar Tech",
-    title: "Head of Marketing",
+    title: "Head of Marketing (Consultation)",
     period: "Until September 2026",
+    year: "2026",
     duties: [
       "Led the marketing strategy for the company's solar products and services.",
-      "Planned and ran digital campaigns to bring in leads for solar installations.",
-      "Managed the brand, content and social media presence.",
-      "Followed up leads and worked with the sales side to turn enquiries into customers.",
+      "Ran paid ad campaigns to bring in leads for solar installations.",
+      "Managed the brand, content and social media pages.",
+      "Followed up leads and worked with sales to turn enquiries into customers.",
       "Tracked results and reported to management.",
     ],
   },
@@ -185,31 +181,82 @@ export const experience: Role[] = [
     company: "Slims Arts and Design",
     title: "Head of Marketing",
     period: "April 2026 – July 2026",
+    year: "2026",
     duties: [
-      "Led the marketing and brand positioning for the design business.",
-      "Promoted the company's design work and portfolio across social media and online channels.",
-      "Planned content and campaigns to attract new clients and keep existing ones.",
+      "Led marketing and brand positioning for the design business.",
+      "Ran paid ads and campaigns to attract new clients.",
+      "Managed social media pages and promoted the design portfolio.",
       "Handled client enquiries and lead follow-up.",
-      "Tracked campaign results and reported to management.",
+      "Tracked results and reported to management.",
     ],
   },
+
+  // ---------- 2024 – 2025 ----------
   {
     company: "Kenty Furniture",
     title: "Head of Marketing",
     period: "2024 – 2025",
-    duties: headOfMarketingDuties,
+    year: "2024",
+    duties: [
+      "Built and led the marketing plan, aligned with the company's sales goals.",
+      "Ran paid ad campaigns and managed the marketing budget.",
+      "Managed social media pages, content and product photography.",
+      "Generated leads and followed up customer enquiries until they became sales.",
+      "Tracked campaign results and reported to management.",
+    ],
   },
   {
     company: "ModernLux Furniture",
     title: "Head of Marketing and Sales Representative",
     period: "2024 – 2025",
+    year: "2024",
     duties: [
-      "Marketing: built and ran the marketing plan, social media content and paid campaigns for the furniture brand.",
-      "Marketing: directed branding, product photography and creative work, and tracked campaign results.",
-      "Sales: handled customer enquiries by phone, WhatsApp, social media and in person.",
-      "Sales: presented products, advised customers on options and prepared quotations.",
-      "Sales: followed up leads, closed sales and kept customer records up to date.",
-      "Linked marketing and sales by turning campaign enquiries into orders.",
+      "Marketing: ran paid ads and campaigns, and managed the brand's social media pages.",
+      "Marketing: directed content, product photography and branding.",
+      "Sales: handled customer enquiries, presented products and prepared quotations.",
+      "Sales: followed up leads, closed sales and kept customer records.",
+      "Turned campaign enquiries into orders and reported results to management.",
+    ],
+  },
+  {
+    company: "Spiro",
+    title: "Junior Campaign Strategist",
+    period: "2024",
+    year: "2024",
+    duties: [
+      "Supported the planning and rollout of marketing campaigns.",
+      "Researched the audience, market and competitors.",
+      "Helped develop campaign ideas and content plans.",
+      "Coordinated with the team to deliver campaigns on schedule.",
+      "Tracked campaign performance and shared results.",
+    ],
+  },
+
+  // ---------- 2023 ----------
+  {
+    company: "Bebabeba Fleet",
+    title: "Campaign Strategist",
+    period: "2023",
+    year: "2023",
+    duties: [
+      "Planned and ran campaign strategies to grow awareness and customers.",
+      "Researched the target audience and competitors.",
+      "Chose the right channels and set campaign goals.",
+      "Coordinated content and ads across the campaign.",
+      "Measured results and improved campaigns.",
+    ],
+  },
+  {
+    company: "Liveal Africa",
+    title: "Junior Web Developer",
+    period: "2023",
+    year: "2023",
+    duties: [
+      "Built and maintained web pages and website features.",
+      "Made layouts responsive across phones, tablets and computers.",
+      "Fixed bugs and tested changes before release.",
+      "Used Git and GitHub for version control.",
+      "Worked with senior developers and followed their guidance.",
     ],
   },
 ];
