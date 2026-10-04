@@ -412,3 +412,14 @@ img.xp-logo { width: auto; min-width: 56px; max-width: 124px; height: 56px; }
   .xp { padding: 18px; }
   .card { padding: 20px; }
 }
+
+/* ---------- Hero photo: portrait framing that keeps the face centred ---------- */
+.hero-photo img { object-fit: cover; object-position: 50% 28%; }
+@media (max-width: 800px) {
+  /* Phones and small tablets: a portrait-shaped frame instead of a short wide strip */
+  .hero-photo { width: 100%; height: auto; aspect-ratio: 4 / 5; max-height: 72vh; min-height: 300px; }
+}
+@media (max-width: 800px) and (orientation: landscape) {
+  .hero-photo { width: 100%; aspect-ratio: 16 / 10; max-height: 80vh; }
+  .hero-photo img { object-position: 50% 30%; }
+}

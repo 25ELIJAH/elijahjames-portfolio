@@ -18,7 +18,7 @@ onMounted(() => {
         v-else
         ref="img"
         :src="profile.photo"
-        :alt="`Photo of ${profile.name}`"
+        :alt="`Portrait of ${profile.name}`" decoding="async" fetchpriority="high"
         @error="failed = true"
       />
     </div>

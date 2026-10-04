@@ -49,7 +49,7 @@ Requires Node.js 18 or newer.
 └── public/                  Files served as-is
     ├── icons/               Tool logos (HTML5, React, Laravel, ...)
     ├── logos/               Company logos for the Experience section
-    ├── images/profile.jpg   Your photo (create the folder when you add it)
+    ├── images/profile.webp  Your photo (hero picture)
     ├── favicon.svg, og.png  Tab icon and link-preview image
     └── robots.txt, sitemap.xml
 ```
@@ -59,7 +59,7 @@ Requires Node.js 18 or newer.
 Everything you see on the site comes from [`data/site.ts`](data/site.ts):
 profile, contact details, projects, skills, experience, testimonials and blog posts.
 
-- **Photo:** save it as `public/images/profile.jpg` (create the `images` folder inside `public`).
+- **Photo:** replace `public/images/profile.webp` (or change `photo` in `data/site.ts` if you use another file name).
 - **Company logo:** add the image to `public/logos/` and set `logo` on that role in `data/site.ts`.
   Without a logo, the role shows the company's initials.
 - **New project:** add an entry to `projects`, then add its page to `public/sitemap.xml`.

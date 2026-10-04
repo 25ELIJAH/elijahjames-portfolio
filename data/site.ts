@@ -21,7 +21,7 @@ export const profile = {
     "I build web software and the marketing strategies that get it in front of the right people.",
   about:
     "I'm a software engineer and digital marketer. I write clean, practical code, and I plan campaigns around real goals: traffic, leads and sales. Working in both areas means products I build are made to be found and used.",
-  photo: "/images/profile.jpg", // put your photo at public/images/profile.jpg
+  photo: "/images/profile.webp", // your photo lives at public/images/profile.webp
   initials: "EJ",
 };
 
