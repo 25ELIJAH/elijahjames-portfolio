@@ -92,9 +92,9 @@ export const projects: Project[] = [
 ];
 
 export const engineering = [
-  { label: "Front end", items: "HTML, CSS, JavaScript, Vue, React" },
-  { label: "Back end", items: "PHP, Node.js, Java, Python, C++" },
-  { label: "Databases", items: "MySQL" },
+  { label: "Front end", items: "HTML5, CSS3, JavaScript (ES6+), React, Vue" },
+  { label: "Back end", items: "Node.js, Express, PHP, Laravel" },
+  { label: "Databases", items: "MongoDB, SQL" },
   { label: "Deployment & tools", items: "Vercel, Git, GitHub" },
 ];
 
