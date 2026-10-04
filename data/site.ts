@@ -151,7 +151,7 @@ export const experience: Role[] = [
     ],
   },
   {
-    company: "Seven Stars Solar",
+    company: "Seven SS Stars Solar",
     title: "Head of Marketing",
     period: "August 2026 – Present",
     year: "2026",
@@ -236,15 +236,15 @@ export const experience: Role[] = [
   // ---------- 2023 ----------
   {
     company: "Bebabeba Fleet",
-    title: "Campaign Strategist",
+    title: "Marketing Associate (Campaign Strategy)",
     period: "2023",
     year: "2023",
     duties: [
-      "Planned and ran campaign strategies to grow awareness and customers.",
+      "Worked as part of the marketing team on the company's campaigns.",
+      "Helped plan campaign strategies to grow awareness and customers.",
       "Researched the target audience and competitors.",
-      "Chose the right channels and set campaign goals.",
-      "Coordinated content and ads across the campaign.",
-      "Measured results and improved campaigns.",
+      "Supported content and ad creation across the campaigns.",
+      "Helped track results and suggest improvements.",
     ],
   },
   {
