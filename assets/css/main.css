@@ -385,3 +385,30 @@ h3 { font-weight: 700; letter-spacing: -0.01em; }
 
 /* Wide logos get a wider box; square logos stay square */
 img.xp-logo { width: auto; min-width: 56px; max-width: 124px; height: 56px; }
+
+/* ---------- Mobile polish (phones and small tablets) ---------- */
+@media (max-width: 760px) {
+  .icon-btn { width: 44px; height: 44px; }
+  .socials a { width: 44px; height: 44px; }
+  .nav-link { padding: 14px 0; }
+  .link, .card .links a { display: inline-block; padding: 8px 0; }
+  .card .links { gap: 6px 20px; }
+  .form input, .form textarea { font-size: 16px; padding: 12px; } /* 16px stops iPhones zooming into the field */
+  .form .btn { width: 100%; text-align: center; padding: 14px 20px; }
+  .actions .btn { flex: 1 1 auto; text-align: center; }
+  .hero-social-row { gap: 16px; }
+  .tools { grid-template-columns: repeat(auto-fill, minmax(72px, 1fr)); }
+  .xp-head { align-items: flex-start; }
+  img.xp-logo { max-width: 104px; }
+  .contact-list li { flex-wrap: wrap; gap: 4px 16px; }
+  .contact-list span { width: auto; min-width: 70px; }
+  .big-mail, .contact-list a { word-break: break-word; overflow-wrap: anywhere; }
+}
+@media (max-width: 380px) {
+  .wrap { padding: 0 18px; }
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.3rem; }
+  .hero-text { padding: 32px 18px 48px; }
+  .xp { padding: 18px; }
+  .card { padding: 20px; }
+}

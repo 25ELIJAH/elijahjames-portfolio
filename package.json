@@ -1,6 +1,13 @@
 {
   "name": "elijah-james-portfolio",
   "version": "1.0.0",
+  "description": "Portfolio of Elijah James, software engineer and digital marketer. Built with Nuxt 3 and Vue.",
+  "author": "Elijah James",
+  "homepage": "https://elijahjamesportfloio.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/25ELIJAH/elijahjames-portfolio.git"
+  },
   "private": true,
   "type": "module",
   "scripts": {
