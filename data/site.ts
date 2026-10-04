@@ -156,11 +156,45 @@ export const projects: Project[] = [
   },
 ];
 
-export const engineering = [
-  { label: "Front end", items: "HTML5, CSS3, JavaScript (ES6+), React, Vue" },
-  { label: "Back end", items: "Node.js, Express, PHP, Laravel, Python, Java" },
-  { label: "Databases", items: "MongoDB, SQL" },
-  { label: "Deployment & tools", items: "Vercel, Git, GitHub" },
+// Tools shown as icons. "icon" is a file in public/icons (without .svg).
+export type Tool = { name: string; icon: string };
+export const engineering: { label: string; items: Tool[] }[] = [
+  {
+    label: "Front end",
+    items: [
+      { name: "HTML5", icon: "html5" },
+      { name: "CSS3", icon: "css3" },
+      { name: "JavaScript", icon: "javascript" },
+      { name: "React", icon: "react" },
+      { name: "Vue", icon: "vuejs" },
+    ],
+  },
+  {
+    label: "Back end",
+    items: [
+      { name: "Node.js", icon: "nodejs" },
+      { name: "Express", icon: "express" },
+      { name: "PHP", icon: "php" },
+      { name: "Laravel", icon: "laravel" },
+      { name: "Python", icon: "python" },
+      { name: "Java", icon: "java" },
+    ],
+  },
+  {
+    label: "Databases",
+    items: [
+      { name: "MongoDB", icon: "mongodb" },
+      { name: "SQL", icon: "sql" },
+    ],
+  },
+  {
+    label: "Deployment & tools",
+    items: [
+      { name: "Vercel", icon: "vercel" },
+      { name: "Git", icon: "git" },
+      { name: "GitHub", icon: "github" },
+    ],
+  },
 ];
 
 export const marketing = [

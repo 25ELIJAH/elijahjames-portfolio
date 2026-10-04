@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import { engineering } from "~/data/site";
-
-const split = (s: string) => s.split(",").map((x) => x.trim());
 </script>
 
 <template>
@@ -15,9 +13,12 @@ const split = (s: string) => s.split(",").map((x) => x.trim());
         <RevealBlock>
           <div class="skill-card">
             <h3>{{ s.label }}</h3>
-            <div class="chips">
-              <span v-for="item in split(s.items)" :key="item" class="chip chip-accent">{{ item }}</span>
-            </div>
+            <ul class="tools">
+              <li v-for="t in s.items" :key="t.name" class="tool">
+                <img :src="`/icons/${t.icon}.svg`" :alt="t.name" width="34" height="34" loading="lazy" />
+                <span>{{ t.name }}</span>
+              </li>
+            </ul>
           </div>
         </RevealBlock>
       </div>
