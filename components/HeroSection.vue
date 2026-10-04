@@ -13,14 +13,20 @@ onMounted(() => {
 <template>
   <section class="hero">
     <div class="hero-photo">
-      <div v-if="failed" class="photo-fallback">{{ profile.initials }}</div>
-      <img
-        v-else
-        ref="img"
-        :src="profile.photo"
-        :alt="`Portrait of ${profile.name}`" decoding="async" fetchpriority="high"
-        @error="failed = true"
-      />
+      <div class="photo-frame">
+        <div class="photo-clip">
+          <div v-if="failed" class="photo-fallback">{{ profile.initials }}</div>
+          <img
+            v-else
+            ref="img"
+            :src="profile.photo"
+            :alt="`Portrait of ${profile.name}`"
+            decoding="async"
+            fetchpriority="high"
+            @error="failed = true"
+          />
+        </div>
+      </div>
     </div>
 
     <div class="hero-text">
