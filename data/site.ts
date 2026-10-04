@@ -253,13 +253,14 @@ export const experience: Role[] = [
   },
   {
     company: "Seven SS Stars Solar",
+    logo: "/logos/seven-ss-stars.png",
     title: "Head of Marketing",
     period: "August 2026 – Present",
     year: "2026",
     current: true,
     duties: [
-      "Plan and run paid ad campaigns to promote solar products and installations.",
-      "Manage social media pages and create content that explains the benefits of solar.",
+      "Plan and run paid ad campaigns to promote solar water heaters.",
+      "Manage social media pages and create content that explains the benefits of solar water heating.",
       "Generate and follow up leads from ads, calls and WhatsApp.",
       "Manage the company's online presence and customer messages.",
       "Track campaign performance and report results to management.",
