@@ -68,7 +68,7 @@ profile, contact details, projects, skills, experience, testimonials and blog po
 
 | Setting | What it does |
 | --- | --- |
-| `formEndpoint` and `formAccessKey` | Sends the contact form to your inbox (free key at web3forms.com). Until set, the form opens the visitor's email app. |
+| `formEndpoint` and `formAccessKey` | The contact form is connected to Web3Forms, so messages arrive in your inbox. It collects full name, service wanted, location and message. Edit the service choices in `contactServices`. |
 | `cv` | Shows a "Download CV" button. Put the PDF in `public/` and set e.g. `"/Elijah-James-CV.pdf"`. |
 | `whatsapp` | Number with country code, digits only. Shows the WhatsApp icon and contact row. |
 | `bookingUrl` | Shows a "Book a call" link (e.g. Calendly). |

@@ -4,8 +4,8 @@ export const settings = {
   siteUrl: "https://elijahjamesportfloio.vercel.app",
   // Contact form: create a free key at web3forms.com (or use a formspree.io URL) and paste it here.
   // While these are empty, the form opens the visitor's email app instead.
-  formEndpoint: "", // e.g. "https://api.web3forms.com/submit"
-  formAccessKey: "", // Web3Forms access key (leave empty for Formspree)
+  formEndpoint: "https://api.web3forms.com/submit", // Web3Forms (messages arrive in your inbox)
+  formAccessKey: "f19295e0-e519-4332-8de0-545016a34468", // Web3Forms access key. Public by design: it only lets people send to your inbox.
   // Each of these shows a button on the site only when filled in.
   cv: "", // e.g. "/Elijah-James-CV.pdf" after saving the file in the public folder
   whatsapp: "254740840018", // number with country code, digits only
@@ -408,4 +408,17 @@ export const posts: Post[] = [
   //   summary: "Five things to fix before you publish.",
   //   body: ["First paragraph...", "Second paragraph..."],
   // },
+];
+
+// Options in the contact form's "Service wanted" dropdown.
+export const contactServices = [
+  "Website development",
+  "Web application / system",
+  "E-commerce website",
+  "Website management and maintenance",
+  "Digital marketing strategy",
+  "Social media management",
+  "Paid advertising (ads)",
+  "SEO (search optimisation)",
+  "Other",
 ];
