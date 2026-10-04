@@ -167,8 +167,9 @@ export const experience: Role[] = [
   {
     company: "Brimax Solar Tech",
     title: "Head of Marketing (Consultation)",
-    period: "Until September 2026",
+    period: "September 2026 – Present",
     year: "2026",
+    current: true,
     duties: [
       "Led the marketing strategy for the company's solar products and services.",
       "Ran paid ad campaigns to bring in leads for solar installations.",
