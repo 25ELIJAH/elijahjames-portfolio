@@ -138,6 +138,7 @@ export const projects: Project[] = [
     slug: "wajibu",
     title: "WAJIBU",
     category: "Software",
+    role: "Built by me",
     url: "https://wajibu.uk/",
     description:
       "Website for an ESG strategy, compliance and sustainability advisory firm based in London.",
@@ -146,6 +147,7 @@ export const projects: Project[] = [
     details: {
       about:
         "WAJIBU is an ESG (Environmental, Social and Governance) strategy, compliance and sustainability advisory firm based in London.",
+      role: "I built this website.",
       features: [
         "Home, About, Services, Insights, Impact and Contact pages",
         "A prominent \"Book Consultation\" call to action",
