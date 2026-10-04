@@ -65,7 +65,7 @@ export const projects: Project[] = [
     title: "Project Two",
     category: "Software",
     description: "Short description of what this project does and the problem it solves.",
-    tags: ["React", "Node.js", "MongoDB"],
+    tags: ["React", "Node.js", "Vercel"],
     links: [
       { label: "Live site", href: "#" },
       { label: "Source code", href: "#" },
@@ -93,9 +93,9 @@ export const projects: Project[] = [
 
 export const engineering = [
   { label: "Front end", items: "HTML, CSS, JavaScript, Vue, React" },
-  { label: "Back end", items: "Node.js, Python, REST APIs" },
-  { label: "Databases", items: "MySQL, MongoDB" },
-  { label: "Tools", items: "Git, GitHub, VS Code" },
+  { label: "Mobile", items: "React Native" },
+  { label: "Back end", items: "Node.js, PHP" },
+  { label: "Deployment & tools", items: "Vercel, Git, GitHub" },
 ];
 
 export const marketing = [
