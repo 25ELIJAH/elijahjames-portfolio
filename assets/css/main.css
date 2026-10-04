@@ -461,3 +461,21 @@ img.xp-logo { width: auto; min-width: 56px; max-width: 124px; height: 56px; }
 @media (max-width: 800px) and (orientation: landscape) {
   .photo-frame { aspect-ratio: 16 / 10; max-height: 78vh; }
 }
+
+/* ---------- Hero photo: same portrait shape on every screen, head to lower chest in view ---------- */
+.hero-photo { align-items: center; justify-content: center; }
+.photo-frame {
+  flex: none; min-height: 0; aspect-ratio: 4 / 5; margin: 0 auto;
+  /* never wider than the panel, 540px, or what fits the screen height */
+  width: min(100%, 540px, calc((100vh - 170px) * 0.8));
+  min-width: min(100%, 280px);
+}
+.hero-photo img, .photo-clip img { object-fit: cover; object-position: 50% 62%; } /* ceiling cropped, head to lower chest kept */
+.photo-frame:hover .photo-clip img { transform: scale(1.03); }
+
+@media (max-width: 800px) {
+  .photo-frame { width: min(100%, 460px, calc(72vh * 0.8)); max-height: none; aspect-ratio: 4 / 5; min-height: 0; }
+}
+@media (max-width: 800px) and (orientation: landscape) {
+  .photo-frame { aspect-ratio: 4 / 5; width: min(100%, 300px); }
+}
