@@ -6,9 +6,9 @@
   --line: #e6e9ef;
   --bg: #ffffff;
   --soft: #f8f9fb;
-  --accent: #2563eb;
-  --accent-dark: #1d4ed8;
-  --accent-soft: #eef3ff;
+  --accent: #1b2230;
+  --accent-dark: #000000;
+  --accent-soft: #f1f3f6;
   --header-bg: rgba(255, 255, 255, 0.92);
   --header-h: 60px;
   --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
@@ -20,9 +20,9 @@
   --line: #243049;
   --bg: #0e1522;
   --soft: #121b2b;
-  --accent: #6b96ff;
-  --accent-dark: #86a9ff;
-  --accent-soft: #1a2747;
+  --accent: #e8edf5;
+  --accent-dark: #ffffff;
+  --accent-soft: #1c2535;
   --header-bg: rgba(14, 21, 34, 0.92);
 }
 :root[data-theme="dark"] .btn { color: #0e1522; }
@@ -110,7 +110,7 @@ h1 { font-size: clamp(1.9rem, 3.4vw, 2.5rem); line-height: 1.15; letter-spacing:
   border: 1.5px solid var(--accent); font-weight: 600; font-size: 0.88rem;
   transition: transform 0.25s var(--ease), background 0.25s, box-shadow 0.25s var(--ease), color 0.25s;
 }
-.btn:hover { background: var(--accent-dark); border-color: var(--accent-dark); color: #fff; transform: translateY(-2px); box-shadow: 0 8px 18px rgba(37, 99, 235, 0.22); }
+.btn:hover { background: var(--accent-dark); border-color: var(--accent-dark); color: #fff; transform: translateY(-2px); box-shadow: 0 8px 18px rgba(27, 34, 48, 0.18); }
 .btn-outline { background: var(--bg); color: var(--accent); }
 .btn-outline:hover { background: var(--accent); color: #fff; }
 
@@ -130,13 +130,13 @@ h3 { font-size: 1rem; margin-bottom: 6px; font-weight: 600; }
   position: relative; height: 100%; background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 22px;
   transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease), border-color 0.3s var(--ease);
 }
-.card:hover { transform: translateY(-4px); border-color: var(--accent); box-shadow: 0 12px 28px rgba(37, 99, 235, 0.1); }
+.card:hover { transform: translateY(-4px); border-color: var(--accent); box-shadow: 0 12px 28px rgba(27, 34, 48, 0.08); }
 .card p { color: var(--muted); font-size: 0.9rem; }
 .card-num { display: block; font-size: 0.78rem; font-weight: 600; color: var(--accent); margin-bottom: 10px; }
 
 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
 .chip { padding: 2px 10px; border-radius: 4px; background: var(--soft); border: 1px solid var(--line); font-size: 0.74rem; font-weight: 500; color: var(--text); transition: background 0.2s, border-color 0.2s, color 0.2s; }
-.card:hover .chip, .skill-card:hover .chip { border-color: #cdd9f7; }
+.card:hover .chip, .skill-card:hover .chip { border-color: #cfd4dd; }
 .chip:hover { background: var(--accent-soft); color: var(--accent); }
 .chip-accent { background: var(--accent-soft); border-color: transparent; color: var(--accent); }
 
@@ -150,7 +150,7 @@ h3 { font-size: 1rem; margin-bottom: 6px; font-weight: 600; }
 /* Skills */
 .skill-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
 .skill-card { height: 100%; background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 20px; transition: transform 0.3s var(--ease), border-color 0.3s, box-shadow 0.3s var(--ease); }
-.skill-card:hover { transform: translateY(-4px); border-color: var(--accent); box-shadow: 0 12px 28px rgba(37, 99, 235, 0.1); }
+.skill-card:hover { transform: translateY(-4px); border-color: var(--accent); box-shadow: 0 12px 28px rgba(27, 34, 48, 0.08); }
 .skill-card h3 { font-size: 0.74rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; }
 
 /* Marketing process */
@@ -262,7 +262,7 @@ h3 { font-size: 1rem; margin-bottom: 6px; font-weight: 600; }
   display: block; margin-top: 48px; padding: 18px 22px; border: 1px solid var(--line); border-radius: 8px; color: var(--text);
   transition: border-color 0.3s var(--ease), transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
 }
-.next-card:hover { border-color: var(--accent); transform: translateY(-3px); box-shadow: 0 12px 28px rgba(37, 99, 235, 0.1); }
+.next-card:hover { border-color: var(--accent); transform: translateY(-3px); box-shadow: 0 12px 28px rgba(27, 34, 48, 0.08); }
 .next-card small { display: block; color: var(--muted); font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.1em; }
 .next-card span { font-weight: 600; }
 .prose { margin-top: 28px; display: grid; gap: 16px; color: var(--text); }
