@@ -238,6 +238,7 @@ export const experience: Role[] = [
   // ---------- 2026 ----------
   {
     company: "Cemmax Building Supplies",
+    logo: "/logos/cemmax.png",
     title: "Head of Marketing",
     period: "August 2026 – Present",
     year: "2026",
@@ -280,6 +281,7 @@ export const experience: Role[] = [
   },
   {
     company: "Slims Arts and Design",
+    logo: "/logos/slims-arts-and-design.png",
     title: "Head of Marketing",
     period: "April 2026 – July 2026",
     year: "2026",
@@ -295,6 +297,7 @@ export const experience: Role[] = [
   // ---------- 2024 – 2025 ----------
   {
     company: "Kenty Furniture",
+    logo: "/logos/kenty-furniture.png",
     title: "Head of Marketing",
     period: "2024 – 2025",
     year: "2024",
@@ -338,6 +341,7 @@ export const experience: Role[] = [
   // ---------- 2023 ----------
   {
     company: "Bebabeba Fleet",
+    logo: "/logos/bebabeba-fleet.png",
     title: "Marketing Associate (Campaign Strategy)",
     period: "2023",
     year: "2023",
@@ -351,6 +355,7 @@ export const experience: Role[] = [
   },
   {
     company: "Liveal Africa",
+    logo: "/logos/liveal-africa.png",
     title: "Junior Web Developer",
     period: "2023",
     year: "2023",

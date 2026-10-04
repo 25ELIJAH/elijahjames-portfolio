@@ -42,7 +42,7 @@ const initials = (name: string) =>
               </div>
               <div class="xp-body">
                 <div class="xp-head">
-                  <img v-if="r.logo" class="xp-logo" :src="r.logo" :alt="`${r.company} logo`" width="48" height="48" loading="lazy" />
+                  <img v-if="r.logo" class="xp-logo" :src="r.logo" :alt="`${r.company} logo`" width="56" height="56" />
                   <span v-else class="xp-logo xp-initials" aria-hidden="true">{{ initials(r.company) }}</span>
                   <div>
                     <h3>{{ r.title }}</h3>
